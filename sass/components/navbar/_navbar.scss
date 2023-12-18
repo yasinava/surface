@@ -1,0 +1,105 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fbfbfb;
+  padding: 0 4%;
+  align-items: center;
+  font-weight: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  z-index: 4;
+  .navbar-logo {
+    margin-right: 200px;
+  }
+
+  .nav-menu {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 27px;
+    color: #7b7b7b;
+    &-logo {
+      div {
+        position: relative;
+        width: 90px;
+        height: 60px;
+      }
+    }
+    .nav-inventory {
+      background-color: rgba(45, 45, 194, 0.926);
+      height: 50%;
+      padding: 5px 10px;
+      text-align: center;
+      border-radius: 4px;
+      color: white;
+      &:hover {
+        color: white;
+      }
+    }
+    a {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+    a:hover {
+      color: #009087;
+    }
+    .focus {
+      border-bottom: 2px solid #009087;
+      border-radius: 2px;
+      color: #009087;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  .nav-searchBox {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 30px;
+    // margin-right: 20px;
+    color: #363535;
+    transition: all 0.2s ease;
+    &-cart {
+      color: #575757;
+      display: flex;
+      font-size: 15px;
+      gap: 4px;
+      svg {
+        font-size: 20px;
+      }
+    }
+    &-dashboard {
+      border: 0.5px solid rgb(0, 99, 132);
+      color: rgb(0, 99, 132);
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: space-around;
+      font-size: 13px;
+      padding: 6px 14px;
+      border-radius: 7px;
+      gap: 5px;
+      span {
+        text-align: center;
+
+        svg {
+          margin-top: 3px;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

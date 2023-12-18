@@ -1,0 +1,27 @@
+.admin-layout {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  &-links {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 70px;
+    width: 20%;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 4px 30px 30px 3px rgba(65, 65, 65, 0.136);
+    a {
+      padding: 20px;
+      width: 100%;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        background-color: rgb(125, 125, 125);
+      }
+    }
+  }
+  &-children {
+    width: 80%;
+  }
+}

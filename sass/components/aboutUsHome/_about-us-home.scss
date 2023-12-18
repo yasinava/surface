@@ -1,0 +1,21 @@
+.about-home-container {
+  width: 100%;
+  padding: 40px 20px;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.6629245448179272) 28%,
+    rgba(227, 236, 235, 0.477) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    span {
+      font-size: 30px;
+    }
+  }
+}

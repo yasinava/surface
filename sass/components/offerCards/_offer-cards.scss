@@ -1,0 +1,32 @@
+.offer-cards-container {
+  .offer-cards-more {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    direction: rtl;
+    margin-top: 3%;
+    h1 {
+      margin-right: 5%;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      margin-left: 5%;
+      color: rgb(0, 99, 132);
+      font-weight: bolder;
+      svg {
+        text-align: end;
+        font-size: 25px;
+      }
+    }
+  }
+  .offer-cards {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+  }
+}

@@ -1,0 +1,66 @@
+.homepic-container {
+  .homepic {
+    width: 100vw;
+    height: 750px;
+    position: relative;
+    &-laptop {
+      position: absolute;
+      top: 100px;
+      right: 80px;
+      &-img {
+        width: 600px;
+        height: 500px;
+        position: relative;
+        z-index: 1;
+      }
+    }
+    &-text {
+      position: absolute;
+      top: 200px;
+      left: 100px;
+      width: 25%;
+      text-align: end;
+      h1 {
+        font-size: 4rem;
+      }
+      p {
+        span {
+          display: block;
+        }
+      }
+
+      &-buttons {
+        margin-top: 30px;
+        z-index: 2;
+        cursor: pointer;
+        a {
+          width: 20%;
+          color: rgb(0, 99, 132);
+          border: 0.5px solid rgb(0, 99, 132);
+          border-radius: 20px;
+          padding: 10px;
+        }
+      }
+    }
+    .homepic-link {
+      display: flex;
+      position: absolute;
+      direction: rtl;
+      gap: 20px;
+      bottom: 180px;
+      left: 220px;
+      padding: 20px;
+      a {
+        display: flex;
+        align-items: center;
+        color: rgb(0, 99, 132);
+        font-weight: bolder;
+        gap: 5px;
+        svg {
+          text-align: end;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}

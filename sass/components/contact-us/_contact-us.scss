@@ -1,0 +1,329 @@
+.contact-us-container {
+  text-align: center;
+  margin: 80px 20px;
+  .contact-us-container-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  h1 {
+    margin: 60px 0;
+  }
+  .contact-us-details {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 1.3rem;
+    gap: 40px;
+    div {
+      border-bottom: 0.5px solid silver;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 30px;
+      width: 100%;
+      padding: 10px;
+
+      p {
+        color: rgb(112, 112, 112);
+      }
+    }
+  }
+  justify-content: center;
+  .platforms-contact-us {
+    width: 48%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-content: center;
+    // justify-items: center;
+    &-instagram {
+      justify-self: end;
+      cursor: pointer;
+      .card {
+        --bg: #f7f7f8;
+        --hover-bg: #ffe5f4;
+        --hover-text: #e50087;
+        width: 230px;
+        text-align: center;
+        background: var(--bg);
+        padding: 1.5em;
+        padding-block: 1.8em;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1), transform 0.15s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+      }
+
+      .card__body {
+        color: #464853;
+        line-height: 1.5em;
+        font-size: 1em;
+      }
+
+      .card > :not(span) {
+        transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1);
+      }
+
+      .card > strong {
+        display: block;
+        font-size: 1.4rem;
+        letter-spacing: -0.035em;
+      }
+
+      .card span {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--hover-text);
+        border-radius: 5px;
+        font-weight: bold;
+        top: 100%;
+        transition: all 0.3s cubic-bezier(0.6, 0.4, 0, 1);
+      }
+
+      .card:hover span {
+        top: 0;
+        font-size: 1.2em;
+      }
+
+      .card:hover {
+        background: var(--hover-bg);
+      }
+
+      .card:hover > div,
+      .card:hover > strong {
+        opacity: 0;
+      }
+    }
+    &-twitter {
+      cursor: pointer;
+      .card {
+        --bg: #f7f7f8;
+        --hover-bg: rgb(189, 246, 255);
+        --hover-text: rgb(0, 157, 255);
+        width: 230px;
+        text-align: center;
+        background: var(--bg);
+        padding: 1.5em;
+        padding-block: 1.8em;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1), transform 0.15s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+      }
+
+      .card__body {
+        color: #464853;
+        line-height: 1.5em;
+        font-size: 1em;
+      }
+
+      .card > :not(span) {
+        transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1);
+      }
+
+      .card > strong {
+        display: block;
+        font-size: 1.4rem;
+        letter-spacing: -0.035em;
+      }
+
+      .card span {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--hover-text);
+        border-radius: 5px;
+        font-weight: bold;
+        top: 100%;
+        transition: all 0.3s cubic-bezier(0.6, 0.4, 0, 1);
+      }
+
+      .card:hover span {
+        top: 0;
+        font-size: 1.2em;
+      }
+
+      .card:hover {
+        background: var(--hover-bg);
+      }
+
+      .card:hover > div,
+      .card:hover > strong {
+        opacity: 0;
+      }
+      .icon {
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+    &-whats-app {
+      cursor: pointer;
+      justify-self: end;
+      .card {
+        --bg: #f7f7f8;
+        --hover-bg: rgb(174, 255, 169);
+        --hover-text: rgb(0, 128, 0);
+        width: 230px;
+        text-align: center;
+        background: var(--bg);
+        padding: 1.5em;
+        padding-block: 1.8em;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1), transform 0.15s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+      }
+
+      .card__body {
+        color: #464853;
+        line-height: 1.5em;
+        font-size: 1em;
+      }
+
+      .card > :not(span) {
+        transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1);
+      }
+
+      .card > strong {
+        display: block;
+        font-size: 1.4rem;
+        letter-spacing: -0.035em;
+      }
+
+      .card span {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--hover-text);
+        border-radius: 5px;
+        font-weight: bold;
+        top: 100%;
+        transition: all 0.3s cubic-bezier(0.6, 0.4, 0, 1);
+      }
+
+      .card:hover span {
+        top: 0;
+        font-size: 1.2em;
+      }
+
+      .card:hover {
+        background: var(--hover-bg);
+      }
+
+      .card:hover > div,
+      .card:hover > strong {
+        opacity: 0;
+      }
+      .icon {
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+    &-telegram {
+      cursor: pointer;
+      .card {
+        --bg: #f7f7f8;
+        --hover-bg: rgb(189, 246, 255);
+        --hover-text: rgb(0, 157, 255);
+        width: 230px;
+        text-align: center;
+        background: var(--bg);
+        padding: 1.5em;
+        padding-block: 1.8em;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1), transform 0.15s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+      }
+
+      .card__body {
+        color: #464853;
+        line-height: 1.5em;
+        font-size: 1em;
+      }
+
+      .card > :not(span) {
+        transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1);
+      }
+
+      .card > strong {
+        display: block;
+        font-size: 1.4rem;
+        letter-spacing: -0.035em;
+      }
+
+      .card span {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--hover-text);
+        border-radius: 5px;
+        font-weight: bold;
+        top: 100%;
+        transition: all 0.3s cubic-bezier(0.6, 0.4, 0, 1);
+      }
+
+      .card:hover span {
+        top: 0;
+        font-size: 1.2em;
+      }
+
+      .card:hover {
+        background: var(--hover-bg);
+      }
+
+      .card:hover > div,
+      .card:hover > strong {
+        opacity: 0;
+      }
+      .icon {
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}
